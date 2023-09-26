@@ -42,6 +42,9 @@ class MyApp extends StatelessWidget {
         GoRoute(
           name: RouteNames.homePage,
           path: "/",
+
+          ///PAGE BUILDER FOR ANIMATION
+
           pageBuilder: (context, state) => CustomTransitionPage(
             transitionsBuilder: (context, animation, secondaryAnimation, child) {
               return SlideTransition(
